@@ -3,6 +3,9 @@ import os
 # Output directory, just 'data' in the root dir
 data_dir = os.path.realpath(os.path.join(os.path.dirname(__file__), './data'))
 
+# Dataset file name, this is the file that will be generated
+dataset_file_name = 'dataset.json'
+
 # Default OSM CRS, keep it
 default_crs = 'epsg:4326'
 
