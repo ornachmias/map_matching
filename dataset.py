@@ -185,7 +185,7 @@ def project_edge_geometry(edge: LineString, reverse=False):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser('Dataset creation script')
     parser.add_argument('--data_dir', type=str, default=config.data_dir, help='Directory to store the data')
-    parser.add_argument('--n_routes', type=int, default=100, help='Number of routes to generate')
+    parser.add_argument('--n_routes', type=int, default=1000, help='Number of routes to generate')
     args = parser.parse_args()
     _graph = graph_provider.get_graph(args.data_dir)
     build_dataset(args.data_dir, _graph, args.n_routes)
